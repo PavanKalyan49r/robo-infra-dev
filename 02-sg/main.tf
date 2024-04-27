@@ -1,5 +1,5 @@
 module "vpn" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for VPN"
@@ -9,7 +9,7 @@ module "vpn" {
 }
 
 module "mongodb" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for mongodb"
@@ -20,7 +20,7 @@ module "mongodb" {
 
 
 module "catalogue" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for catalogue"
@@ -30,7 +30,7 @@ module "catalogue" {
 }
 
 module "redis" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for redis"
@@ -40,7 +40,7 @@ module "redis" {
 }
 
 module "mysql" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for mysql"
@@ -50,7 +50,7 @@ module "mysql" {
 }
 
 module "rabbitmq" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for rabbitmq"
@@ -60,7 +60,7 @@ module "rabbitmq" {
 }
 
 module "user" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for user"
@@ -70,7 +70,7 @@ module "user" {
 }
 
 module "cart" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for cart"
@@ -80,7 +80,7 @@ module "cart" {
 }
 
 module "shipping" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for shipping"
@@ -90,7 +90,7 @@ module "shipping" {
 }
 
 module "payment" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for payment"
@@ -100,7 +100,7 @@ module "payment" {
 }
 
 module "web" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for web"
@@ -110,7 +110,7 @@ module "web" {
 }
 
 module "app_alb" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for APP ALB"
@@ -120,7 +120,7 @@ module "app_alb" {
 }
 
 module "web_alb" {
-  source         = "../../terraform-aws-security-group"
+  source         = "git::https://github.com/PavanKalyan49r/terraform-aws-security-group.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "sg for WEB ALB"
